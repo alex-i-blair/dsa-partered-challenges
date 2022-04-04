@@ -6,7 +6,7 @@ function reverseWords(sentence) {
     .map((word) => word.split('').reverse().join(''))
     .join(' ');
 }
-// console.log(reverseWords(sent));
+console.log(reverseWords(sent));
 
 function oddishOrEvenish(number) {
   const reducer = (acc, curr) => acc + curr;
@@ -17,12 +17,27 @@ function oddishOrEvenish(number) {
     .reduce(reducer);
 
   return numSum % 2 === 0 ? 'Evenish' : 'Oddish';
-  // if (numSum % 2 === 0) {
-  //   return 'evenish';
-  // } else {
-  //   return 'oddish';
-  // }
 }
 
 const number = 122;
 console.log(oddishOrEvenish(number));
+
+const fizzBuzzInput = 16;
+
+function fizzBuzz(number) {
+  const res = [];
+  for (let i = 1; i < number + 1; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      res.push('Fizzbuzz');
+    } else if (i % 3 === 0) {
+      res.push('Fizz');
+    } else if (i % 5 === 0) {
+      res.push('buzz');
+    } else {
+      res.push(i);
+    }
+  }
+  return res;
+}
+
+console.log(fizzBuzz(fizzBuzzInput));
