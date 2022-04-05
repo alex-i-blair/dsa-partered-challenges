@@ -6,6 +6,7 @@ function reverseWords(sentence) {
     .map((word) => word.split('').reverse().join(''))
     .join(' ');
 }
+// eslint-disable-next-line no-console
 console.log(reverseWords(sent));
 
 function oddishOrEvenish(number) {
@@ -20,6 +21,8 @@ function oddishOrEvenish(number) {
 }
 
 const number = 122;
+
+// eslint-disable-next-line no-console
 console.log(oddishOrEvenish(number));
 
 const fizzBuzzInput = 16;
@@ -40,4 +43,5 @@ function fizzBuzz(number) {
   return res;
 }
 
+// eslint-disable-next-line no-console
 console.log(fizzBuzz(fizzBuzzInput));
